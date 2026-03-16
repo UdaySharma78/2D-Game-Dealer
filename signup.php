@@ -1,16 +1,23 @@
 <?php
 include "config.php";
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$sql = "INSERT INTO users (name, email, password) 
-        VALUES ('$name', '$email', '$password')";
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-if ($conn->query($sql) === TRUE) {
-    echo "Account Created Successfully! <a href='login.html'>Login Now</a>";
+    $sql = "INSERT INTO users (name, email, password) 
+            VALUES ('$name', '$email', '$password')";
+
+    if ($conn->query($sql) === TRUE) {
+        header("Location: login.html");
+        exit();
+    } else {
+        echo "Error: " . $conn->error;
+    }
+
 } else {
-    echo "Error: " . $conn->error;
+    echo "Access Denied";
 }
 ?>
