@@ -1,0 +1,186 @@
+/* =============================================
+   2D Car Dealer - Auth Pages Stylesheet
+   (login.html & signup.html)
+   ============================================= */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a0a0f;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Top bar ── */
+.auth-topbar {
+    background: linear-gradient(135deg, #0d1117, #1a1a2e);
+    border-bottom: 2px solid #f59e0b;
+    padding: 0 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-topbar .brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f59e0b;
+    text-decoration: none;
+}
+
+.auth-topbar .brand span { color: #fff; }
+
+.auth-topbar .back-link {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.auth-topbar .back-link:hover { color: #f59e0b; }
+
+/* ── Main wrapper ── */
+.auth-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: radial-gradient(ellipse at 50% 0%, rgba(245,158,11,0.06) 0%, transparent 60%);
+}
+
+/* ── Auth card ── */
+.auth-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.auth-card .auth-icon {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.auth-card h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.auth-card .auth-sub {
+    color: #64748b;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/* ── Form elements ── */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px 14px;
+    background: #0d1117;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    color: #f1f5f9;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 3px rgba(245,158,11,0.12);
+}
+
+.form-group input::placeholder { color: #475569; }
+
+/* ── Submit button ── */
+.btn-auth {
+    width: 100%;
+    padding: 13px;
+    background: #f59e0b;
+    color: #0d1117;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s;
+    margin-top: 6px;
+    letter-spacing: 0.3px;
+}
+
+.btn-auth:hover {
+    background: #d97706;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245,158,11,0.3);
+}
+
+/* ── Divider ── */
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 22px 0 18px;
+    color: #334155;
+    font-size: 0.8rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #1e293b;
+}
+
+/* ── Alt link ── */
+.auth-alt {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.auth-alt a {
+    color: #f59e0b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.auth-alt a:hover { text-decoration: underline; }
+
+/* ── Alerts ── */
+.alert {
+    padding: 11px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.alert-danger  { background: rgba(220,38,38,0.15);  border: 1px solid #dc2626; color: #f87171; }
+.alert-success { background: rgba(22,163,74,0.15);  border: 1px solid #16a34a; color: #4ade80; }
