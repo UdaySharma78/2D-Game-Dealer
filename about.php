@@ -11,7 +11,6 @@
         .about-hero h1 { font-size: 2.4rem; font-weight: 800; color: #fff; margin-bottom: 12px; }
         .about-hero h1 span { color: #f59e0b; }
         .about-hero p { color: #94a3b8; font-size: 1rem; max-width: 580px; margin: 0 auto; line-height: 1.7; }
-
         .about-content { max-width: 1000px; margin: 50px auto; padding: 0 30px; }
 
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px; }
