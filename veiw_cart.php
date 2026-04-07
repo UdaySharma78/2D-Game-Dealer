@@ -234,7 +234,7 @@ $total = $subtotal - $discount_amount;
             <h3>🎮 Apply Discount Coupon</h3>
             <p style="color:#64748b;font-size:0.82rem;margin-bottom:14px;">
                 Win coupons by playing the <a href="game.php" style="color:#f59e0b;">Test Drive game</a>!
-                Score 500+ for 10% off, 1000+ for 20% off, 2000+ for 30% off.
+                Score 5000+ for 10% off, 7500+ for 20% off, 10000+ for 30% off.
             </p>
             <form method="POST">
                 <div class="coupon-input-row">
