@@ -45,7 +45,6 @@
     </style>
 </head>
 <body>
-
 <!-- NAVBAR (static for about page) -->
 <nav class="navbar">
     <a href="index.php" class="brand">2D <span>Car Dealer</span></a>
